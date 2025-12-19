@@ -3,6 +3,7 @@ import { FaArrowRight, FaCheck, FaTrash, FaClock } from "react-icons/fa";
 export default function TaskCard({ task, move, remove }) {
 
   const getStatusIcon = (status) => {
+    
     if (status === "Done") return <FaCheck className="icon-status" />;
     if (status === "In Progress") return <FaArrowRight className="icon-status" />;
     return <FaClock className="icon-status" />; // To Do
